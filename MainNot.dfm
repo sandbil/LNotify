@@ -3,7 +3,7 @@ object MainForm: TMainForm
   Top = 286
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'LNotes '#1048#1085#1092#1086
+  Caption = 'LNotes Info'
   ClientHeight = 279
   ClientWidth = 436
   Color = clBtnFace
@@ -172,7 +172,7 @@ object MainForm: TMainForm
     Top = 248
     Width = 75
     Height = 25
-    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+    Caption = 'Save'
     TabOrder = 0
     OnClick = SaveBtClick
   end
@@ -181,7 +181,7 @@ object MainForm: TMainForm
     Top = 248
     Width = 75
     Height = 25
-    Caption = #1047#1072#1082#1088#1099#1090#1100
+    Caption = 'Close'
     TabOrder = 1
     OnClick = CloseBtClick
   end
@@ -193,14 +193,14 @@ object MainForm: TMainForm
     ActivePage = TabSheet3
     TabOrder = 2
     object TabSheet3: TTabSheet
-      Caption = #1057#1077#1088#1074#1077#1088
+      Caption = 'Server'
       ImageIndex = 2
       object NxLabel1: TNxLabel
         Left = 38
         Top = 14
-        Width = 76
+        Width = 70
         Height = 13
-        Caption = #1057#1077#1088#1074#1077#1088' Domino'
+        Caption = 'Server Domino'
         HorizontalPosition = hpLeft
         InnerHorizontal = True
         InnerVertical = False
@@ -211,9 +211,9 @@ object MainForm: TMainForm
       object NxLabel2: TNxLabel
         Left = 55
         Top = 39
-        Width = 58
+        Width = 54
         Height = 13
-        Caption = #1055#1072#1087#1082#1072' '#1057#1069#1044
+        Caption = 'Folder SED'
         HorizontalPosition = hpLeft
         InnerHorizontal = True
         InnerVertical = False
@@ -222,11 +222,11 @@ object MainForm: TMainForm
         VerticalPosition = vpTop
       end
       object NxLabel3: TNxLabel
-        Left = 36
+        Left = 47
         Top = 64
-        Width = 77
+        Width = 59
         Height = 13
-        Caption = #1055#1088#1077#1092#1080#1082#1089' '#1075#1088#1091#1087#1087
+        Caption = 'User'#39's group'
         HorizontalPosition = hpLeft
         InnerHorizontal = True
         InnerVertical = False
@@ -239,7 +239,7 @@ object MainForm: TMainForm
         Top = 87
         Width = 402
         Height = 106
-        Caption = #1057#1086#1093#1088#1072#1085#1077#1085#1085#1099#1077' '#1076#1072#1085#1085#1099#1077
+        Caption = 'Saved data'
         TabOrder = 0
         object Memo1: TNxMemo
           Left = 8
@@ -257,7 +257,7 @@ object MainForm: TMainForm
           Left = 7
           Top = 77
           Width = 386
-          Caption = #1054#1095#1080#1089#1090#1080#1090#1100
+          Caption = 'Clear'
           TabOrder = 1
           OnClick = BtClearClick
         end
@@ -293,14 +293,14 @@ object MainForm: TMainForm
       end
     end
     object TabSheet2: TTabSheet
-      Caption = #1041#1072#1079#1099' Lotus'
+      Caption = 'Lotus DB'
       ImageIndex = 1
       object Label8: TLabel
         Left = 4
         Top = 8
-        Width = 30
+        Width = 25
         Height = 13
-        Caption = #1055#1086#1095#1090#1072
+        Caption = 'Email'
       end
       object NextGrid1: TNextGrid
         Left = 0
@@ -419,7 +419,7 @@ object MainForm: TMainForm
         Left = 16
         Top = 168
         Width = 75
-        Caption = #1044#1086#1073#1072#1074#1080#1090#1100
+        Caption = 'Add'
         TabOrder = 1
         OnClick = AddBtClick
       end
@@ -427,7 +427,7 @@ object MainForm: TMainForm
         Left = 104
         Top = 168
         Width = 75
-        Caption = #1059#1076#1072#1083#1080#1090#1100
+        Caption = 'Delete'
         TabOrder = 2
         OnClick = DeleteBtClick
       end
@@ -442,7 +442,7 @@ object MainForm: TMainForm
       end
     end
     object TabSheet1: TTabSheet
-      Caption = #1059#1074#1077#1076#1086#1084#1083#1077#1085#1080#1103
+      Caption = 'Notification'
       object GroupBox1: TGroupBox
         Left = 8
         Top = 23
@@ -451,14 +451,14 @@ object MainForm: TMainForm
         Caption = #1053#1072#1089#1090#1088#1086#1081#1082#1080' '#1090#1072#1081#1084#1077#1088#1086#1074
         TabOrder = 0
         object Label1: TLabel
-          Left = 16
+          Left = 84
           Top = 24
-          Width = 128
+          Width = 88
           Height = 13
-          Caption = #1055#1088#1086#1074#1077#1088#1103#1090#1100' '#1087#1086#1095#1090#1091' '#1082#1072#1078#1076#1099#1077
+          Caption = 'Check Email every'
         end
         object Label2: TLabel
-          Left = 193
+          Left = 266
           Top = 24
           Width = 23
           Height = 13
@@ -467,9 +467,9 @@ object MainForm: TMainForm
         object Label3: TLabel
           Left = 16
           Top = 60
-          Width = 200
+          Width = 158
           Height = 13
-          Caption = #1042#1088#1077#1084#1103' '#1086#1090#1086#1073#1088#1072#1078#1077#1085#1080#1103' '#1086#1082#1085#1072' '#1091#1074#1077#1076#1086#1084#1083#1077#1085#1080#1103
+          Caption = 'Time showing notification window'
         end
         object Label4: TLabel
           Left = 268
@@ -479,7 +479,7 @@ object MainForm: TMainForm
           Caption = #1089#1077#1082'.'
         end
         object EdCheckTime: TNxSpinEdit
-          Left = 148
+          Left = 221
           Top = 21
           Width = 41
           Height = 21
@@ -505,7 +505,7 @@ object MainForm: TMainForm
       end
     end
     object TabSheet4: TTabSheet
-      Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+      Caption = 'About'
       ImageIndex = 3
     end
   end
@@ -513,12 +513,12 @@ object MainForm: TMainForm
     Left = 8
     Top = 248
     object CheckNewDoc: TMenuItem
-      Caption = #1055#1088#1086#1074#1077#1088#1082#1072' '#1087#1086#1095#1090#1099
+      Caption = 'Check Email'
       OnClick = CheckNewDocClick
       OnDrawItem = CheckNewDocDrawItem
     end
     object startLN: TMenuItem
-      Caption = #1047#1072#1087#1091#1089#1082' Lotus Notes'
+      Caption = 'Run Lotus Notes'
       OnClick = startLNClick
       OnDrawItem = startLNDrawItem
     end
@@ -526,7 +526,7 @@ object MainForm: TMainForm
       Caption = '-'
     end
     object Config: TMenuItem
-      Caption = #1053#1072#1089#1090#1088#1086#1081#1082#1072
+      Caption = 'Setting'
       OnClick = ConfigClick
       OnDrawItem = ConfigDrawItem
     end
@@ -534,7 +534,7 @@ object MainForm: TMainForm
       Caption = '-'
     end
     object Exit1: TMenuItem
-      Caption = #1042#1099#1093#1086#1076
+      Caption = 'Exit'
       OnClick = Exit1Click
       OnDrawItem = Exit1DrawItem
     end

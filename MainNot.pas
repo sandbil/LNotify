@@ -297,7 +297,7 @@ begin
    ACanvas.Brush.Color := clMenu;
  ARect.Left := 25;
  ACanvas.FillRect(ARect);
- DrawText(ACanvas.Handle, PChar('Проверка почты'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
+ DrawText(ACanvas.Handle, PChar('Check email'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
 end;
 
 procedure TMainForm.startLNDrawItem(Sender: TObject; ACanvas: TCanvas;
@@ -309,7 +309,7 @@ begin
    ACanvas.Brush.Color := clMenu;
  ARect.Left := 25;
  ACanvas.FillRect(ARect);
- DrawText(ACanvas.Handle, PChar('Запуск Lotus Notes'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
+ DrawText(ACanvas.Handle, PChar('Run Lotus Notes'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
 end;
 
 procedure TMainForm.Exit1DrawItem(Sender: TObject; ACanvas: TCanvas;
@@ -321,7 +321,7 @@ begin
    ACanvas.Brush.Color := clMenu;
  ARect.Left := 25;
  ACanvas.FillRect(ARect);
- DrawText(ACanvas.Handle, PChar('Выход'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
+ DrawText(ACanvas.Handle, PChar('Exit'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
  DrawBar(ACanvas);
 end;
 
@@ -335,12 +335,12 @@ begin
 
  ARect.Left := 25;
  ACanvas.FillRect(ARect);
- DrawText(ACanvas.Handle, PChar('Настройки'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
+ DrawText(ACanvas.Handle, PChar('Setting'), -1, ARect, DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOCLIP);
 end;
 
 procedure TMainForm.Exit1Click(Sender: TObject);
 begin
-if MessageDlg('Выходим из программы "LNotes Инфо" ?!',
+if MessageDlg('You want to quit from "LNotes Info" ?!',
   mtConfirmation, [mbYes, mbNo], 0) = mrYes then  Application.Terminate;
 end;
 
@@ -458,7 +458,7 @@ begin
           Alignment:=taCenter;
           Font.Style:=[fsBold];
           if DocLink.count < 8 then Caption:=DocLink[0]+chr(10)+DocLink[1]
-          else Caption:=DocLink[0]+chr(10)+DocLink[1]+' (показаны первые 8)';
+          else Caption:=DocLink[0]+chr(10)+DocLink[1]+' (show first 8)';
 
       end;
 
@@ -477,7 +477,7 @@ begin
           HyperLink:=LeftStr(DocLink[i],pos('#|',DocLink[i]));
           CapText:=RightStr(DocLink[i],length(DocLink[i])-pos('#|',DocLink[i])-1);
           Hint:=CapText;
-          if trim(CapText)=''then Caption:= 'отсутствует тема или краткое содержание'
+          if trim(CapText)=''then Caption:= 'no caption'
           else if length(CapText)>55 then Caption:= leftstr(CapText,55)+'...'
                                       else Caption:= CapText;
   //        OnClick := HintLabelClick;
@@ -524,7 +524,7 @@ var
   UnreadDocCount,i:integer;
     Doc: TNotesDocument;
     mDocLink,mDocNeedMarkRead:TStrings;
-//    pr_noshow:boolean;//признак того что в базе есть непрочитанные настройки
+
 begin
   try
     db := OpenDb(server, dbname, false);
@@ -534,7 +534,7 @@ begin
       mDocLink:=TStringList.Create();
       mDocNeedMarkRead:=TStringList.Create();
       mDocLink.Add(windprefix + Db.Title);
-      mDocLink.Add('Новых сообщений: ');
+      mDocLink.Add('New messages: ');
       if UnreadDocCount>0 then begin
           for i := 0 to db.UnreadDocuments.Count-1 do begin
               try
@@ -595,10 +595,10 @@ var
 i:integer;
 prIcnAnim, pr:boolean;
 begin
-prIcnAnim:=NewDocCheck(showEmptywind,iniServer,MailFile.Text,'Почта: ');
+prIcnAnim:=NewDocCheck(showEmptywind,iniServer,MailFile.Text,'Email: ');
 for i:=0 to NextGrid1.RowCount-1 do
 begin
-    pr:=NewDocCheck(showEmptywind,iniServer,NextGrid1.Cell[2,i].asString, 'База: ');
+    pr:=NewDocCheck(showEmptywind,iniServer,NextGrid1.Cell[2,i].asString, 'NSF: ');
     prIcnAnim:=(prIcnAnim or pr );
 end;
 if prIcnAnim then  TimerIconAnimate.Enabled:=true
