@@ -73,5 +73,5 @@ This tested with version 8.5.
 *  NSF02= ..  
   
    
-[![screenshot1](/public/screenshot_th1.png)](/public/screenshot1.png)
-[![screenshot2](/public/screenshot_th2.png)](/public/screenshot2.png)
+[![screenshot1](/setting.png)](/setting.png)
+[![screenshot2](/windowNotify.png)](/windowNotify.png)
