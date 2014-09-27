@@ -129,7 +129,7 @@ begin
     finally
       tf.Free;
     end;
-    TextOut(2, 85, 'Lotus почта');
+    TextOut(2, 85, 'Lotus Email');
   end;
 end;
 
