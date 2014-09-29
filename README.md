@@ -10,8 +10,8 @@ LNotify
 This program notify you about a new records at the NSF databases (so email or a document).  
 It  monitor UnReadmarks in the your set NSF databases and show notification window with new record clickable captions.  
 After, Click on caption to open document in the  Lotus Notes client and see a new it.  
-This used simple RC4 to encode  for remembering password. 
-This example program based on class library, for detail see file Ln\Readme.txt (Sergey Kolchin..)
+This used simple RC4 to encode  for remembering password.   
+This example program based on class library, for detail see file Ln\Readme.txt (Sergey Kolchin..).  
 
 
 This tested with version 8.5.   
