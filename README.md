@@ -7,10 +7,11 @@ tags: delphi, Lasarus, Lotus Notes, Lotus Domino
 ---
 LNotify
 =========
-This programm notify you about a new records at the NSF databases (so email or a document).  
+This program notify you about a new records at the NSF databases (so email or a document).  
 It  monitor UnReadmarks in the your set NSF databases and show notification window with new record clickable captions.  
 After, Click on caption to open document in the  Lotus Notes client and see a new it.  
-This used simple RC4 to encode  for remembering password.  
+This used simple RC4 to encode  for remembering password. 
+This example program based on class library, for detail see file Ln\Readme.txt (Sergey Kolchin..)
 
 
 This tested with version 8.5.   
@@ -24,23 +25,24 @@ This tested with version 8.5.
   If you want to have portable version, you must have following structure:
   
   ..\data\names.nsf  
-  ..\icc\icclib\icclib.dll 
-  ..\icc\osslib\libeay32.dll
-  icudt34l.dat
-  js32.dll
-  ndgts.dll
-  nlsccstr.dll
-  nnet.dll
-  nnotes.dll
-  nntcp.dll
-  nsdhelp.dll
-  nstrings.dll
-  ntcp.dll
-  nxmlproc.dll
-  LNotify.exe
-  LNotify.ini
-  notes.ini
-  ltsci3.tlb
+  ..\icc\icclib\icclib.dll  
+  ..\icc\osslib\libeay32.dll  
+  icudt34l.dat  
+  js32.dll  
+  ndgts.dll  
+  nlsccstr.dll  
+  nnet.dll  
+  nnotes.dll  
+  nntcp.dll  
+  nsdhelp.dll  
+  nstrings.dll  
+  ntcp.dll  
+  nxmlproc.dll  
+  LNotify.exe  
+  LNotify.ini  
+  notes.ini  
+  ltsci3.tlb  
+    
     
 ## Usage
 

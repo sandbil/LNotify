@@ -1,5 +1,5 @@
 {==============================================================================|
-| Project : Notes/Delphi class library                           | 3.10        |
+| Project : Notes/Delphi class library                           | 3.11        |
 |==============================================================================|
 | Content:                                                                     |
 |==============================================================================|
@@ -17,7 +17,7 @@
 |   Sergey Okorochkov (Russia)                                                 |
 | All Rights Reserved.                                                         |
 |   Last Modified:                                                             |
-|     17.01.2002, Sergey Kolchin                                               |
+|     17.11.2011, Sandbil                                                     |
 |==============================================================================|
 | Contributors and Bug Corrections:                                            |
 |   Fujio Kurose                                                               |
@@ -42,6 +42,7 @@
 |                                                                              |
 | Latest versions are available at                                             |
 |   http://www.geocities.com/skolchin/                                         |
+|   https://github.com/sandbil/LNotify                                         |
 |==============================================================================|}
 unit Class_LotusNotes;
 
